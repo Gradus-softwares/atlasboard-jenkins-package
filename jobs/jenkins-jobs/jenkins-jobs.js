@@ -32,6 +32,7 @@ module.exports = function(config, dependencies, job_callback) {
 
         if (viewData) {
             result = viewData;
+            result.title = config.title;
 
             if (result.jobs && config.showUnstableOnly) {
                 var job = null;

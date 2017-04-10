@@ -3,7 +3,7 @@ widget = {
     onData: function(el, data) {
 
         $('.jobs', el).empty();
-        $('h1', el).html(data.name);
+        $('h1', el).html(data.title);
         if (data.jobs.length) {
             var jobsText = (data.jobs.length === 1) ? "job" : "jobs";
             $('h2', el).html("<a href='" + data.url + "'>" + data.jobs.length + " " + jobsText + "</a>");

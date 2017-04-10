@@ -31,6 +31,8 @@ widget = {
                     case "notbuilt":
                         listItem.addClass("notbuilt");
                         break;
+                    case "aborted":
+                        listItem.addClass("notbuilt");
                     default:
                 }
 

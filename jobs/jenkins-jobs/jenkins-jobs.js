@@ -38,7 +38,7 @@ module.exports = function(config, dependencies, job_callback) {
                 var job = null;
                 for (var i = result.jobs.length - 1; i >= 0; i--) {
                     job = result.jobs[i];
-                    if (job.color != "red" && job.color != "yellow") {
+                    if (job.color != "red" && job.color != "yellow" && job.color != "aborted") {
                         result.jobs.splice(i, 1);
                     }
                 }
